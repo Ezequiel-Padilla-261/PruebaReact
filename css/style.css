@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.logo {
+  color: rgb(255, 255, 255);
+}
+.point-red {
+  color: red;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(43, 255, 0, 0);
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+}
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.menu-bar {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.btn-header {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  margin-right: 10px;
+}
+.main {
+  height: 100vh;
+  background-image: url('../img/fondo-home.jpg');
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    justify-content: space-around;
+  }
+  #menu_bar {
+    display: flex;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  #menu_bar span {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    background: #fff;
+    transition: all 0.75s ease;
+    transform-origin: 0px 100%;
+  }
+
+  #menu_bar span:nth-child(2) {
+    top: calc(50% - 2px);
+  }
+
+  #menu_bar span:nth-child(3) {
+    bottom: 0;
+  }
+  .visible_menu span:nth-child(1) {
+    transform: rotate(45deg) translate(-2px, 1px);
+  }
+
+  .visible_menu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .visible_menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  .nav {
+    margin-top: 60px;
+    top: -100%;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+  }
+  .visible_menu header {
+    background-color: white;
+  }
+  .visible_menu #menu_bar span {
+    background-color: black;
+  }
+  .nav {
+    opacity: 0;
+    transition: all 0.55s ease;
+  }
+  .visible_menu .nav {
+    top: 0;
+    opacity: 1;
+    background: white;
+  }
+  .btn-header {
+    color: black;
+  }
+}
