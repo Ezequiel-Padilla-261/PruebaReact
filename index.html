@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MAC OS</title>
+    <link rel="shortcut icon" href="./img/apple-logo-1.png" />
     <!--Links-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#scroll-spy">
     <header class="header">
       <h1 class="logo"><i class="fab fa-apple"></i>apple</h1>
       <div class="menu-bar">
@@ -19,16 +20,14 @@
         </a>
       </div>
       <nav class="nav">
-        <a href="#" id="home" class="btn-header"
-          ><i class="fas fa-home"></i>home</a
-        >
-        <a href="#" id="comparison" class="btn-header"
+        <a href="#home" class="btn-header"><i class="fas fa-home"></i>home</a>
+        <a href="#comparison" class="btn-header"
           ><i class="fas fa-balance-scale-right"></i>comparison</a
         >
-        <a href="#" id="experience" class="btn-header"
+        <a href="#experience" class="btn-header"
           ><i class="fas fa-images"></i>experience</a
         >
-        <a href="#" id="conclusion" class="btn-header"
+        <a href="#conclusion" class="btn-header"
           ><i class="far fa-comments"></i>conclusion</a
         >
       </nav>
@@ -52,44 +51,50 @@
         </div>
       </section>
       <section class="comparison" id="comparison">
-        <div class="contenedor-main">
-          <ul class="advantages">
-            <li>
+        <div class="advantages">
+          <h1 class="title-pro">advantages</h1>
+          <ul>
+            <li class="item first">
               Apple diseña tanto hardware como software lo que permite
               garantizar una buena experiencia de funcionamiento y atender los
               pequeños detalles
             </li>
-            <li>
+            <li class="item">
               En una Mac puedes tener lo mejor de los dos mundos: Mac OS /
               Windows (también Linux pero es un tema para otro día)
             </li>
-            <li>
+            <li class="item">
               El sistema operativo utiliza muchos elementos visuales para
               comunicar haciéndo más fácil su uso
             </li>
-            <li>
+            <li class="item">
               Todos los modelos vienen integrados con características (Bluetooth
               webcam conexiones de vídeo avanzados etc.) que en otras
               computadoras serían opcionales
             </li>
-            <li>
+            <li class="item">
               Generalmente están inmunes a ataques por virus y programas
               maliciosos
             </li>
-            <li>
+            <li class="item">
               Se distinguen por su diseño el cual incluye muchas innovaciones en
               el área técnica y de funcionamiento
             </li>
-            <li>Excelente en el manejo de contenido multimedias</li>
-            <li>Duración de batería es excepcional</li>
+            <li class="item">
+              Excelente en el manejo de contenido multimedias
+            </li>
+            <li class="item">Duración de batería es excepcional</li>
           </ul>
-          <ul class="disadvantages">
-            <li>Tienden a ser más costosas que las PCs</li>
-            <li>Centros de reparación no son tan accesibles</li>
-            <li>
+        </div>
+        <div class="disadvantages">
+          <h1 class="title-pro">disadvantages</h1>
+          <ul>
+            <li class="item first">Tienden a ser más costosas que las PCs</li>
+            <li class="item">Centros de reparación no son tan accesibles</li>
+            <li class="item">
               En algunas de ellas la capacidad de expandirlas son limitadas
             </li>
-            <li>
+            <li class="item">
               En el aspecto de juegos la variedad no es tan extensa como en
               Windows
             </li>
@@ -100,6 +105,14 @@
     <!--primera sección-->
     <!--Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
     <script src="./js/jquery-latest.js"></script>
     <script src="./js/script.js"></script>
   </body>
